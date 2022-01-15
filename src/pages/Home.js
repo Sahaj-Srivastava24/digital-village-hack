@@ -5,6 +5,7 @@ import { styled } from '@mui/styles';
 import { Link } from 'react-router-dom'
 import logo from '../static/Intersect.png'
 import styles from '../static/css/style'
+import Socials from '../components/Socials';
 
 export default function Home() {
 
@@ -66,6 +67,7 @@ export default function Home() {
                     </Stack>
                 </Container>
             </Box>
+            {/* <Socials /> */}
         </>
     )
 }

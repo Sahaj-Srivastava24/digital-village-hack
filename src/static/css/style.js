@@ -17,10 +17,18 @@ const TypographyStyles = {
   fontFamily: "'Playfair Display', serif",
 }
 
+const socialsStyles = {
+  position: 'absolute',
+  
+  display: 'flex',
+  flexDirection: 'column',
+  padding: '1rem'
 
+}
 module.exports = {
   center_text,
   accordionStyle,
   logoStyles,
   TypographyStyles,
+  socialsStyles
 }
