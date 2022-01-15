@@ -1,32 +1,38 @@
 import React from 'react'
 import { Container, Typography, Accordion, AccordionSummary, AccordionDetails  } from '@mui/material'
 import style from '../static/css/style.js'
+import data from '../components/data.js'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 
 export default function Problems() {
+
     return (
         <div>
             <Container>
                 <div >
-                    <Typography variant="h3" style={style.center_text}>Problem Statement</Typography>
+                    <Typography variant="h3" style={style.center_text} gutterBottom >Problem Statement</Typography>
                 </div>
-                <Accordion>
-                    <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                    >
-                    <Typography>Accordion 1</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                    </Typography>
-                    </AccordionDetails>
-                </Accordion>
+                {data.problemStatements.map(problemStatement => {
+                    return (
+                        <Accordion 
+                        style={style.accordionStyle}
+                        disableGutters>
+                            <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                            >
+                            <Typography>{problemStatement.title}</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                            <Typography>{problemStatement.content}</Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                    )}
+                )}
+                
             </Container>
         </div>
     )
