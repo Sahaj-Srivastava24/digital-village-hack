@@ -20,10 +20,12 @@ const TypographyStyles = {
 
 const socialsStyles = {
   position: 'absolute',
-  
+  right: '0',
+  bottom: '0',
   display: 'flex',
   flexDirection: 'column',
-  padding: '1rem'
+  padding: '1rem',
+  opacity: '0.8',
 }
 
 const problemHeadingStyles = { 

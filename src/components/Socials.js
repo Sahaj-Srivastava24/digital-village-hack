@@ -8,12 +8,13 @@ export default function Socials() {
     const MUIicon = {
         color: '#fff',
         fontSize: '2rem',
+        margin: '0.3rem 0',
     }
     return (
         <div style={style.socialsStyles}>
             <InstagramIcon style={MUIicon}/>
             <LinkedInIcon style={MUIicon}/>
-            <img src={dc} alt="" height={30} width={30} />
+            <img src={dc} alt="" height={30} width={30} style={{ margin:'0.5rem 0 0 0'}} />
         </div>
     )
 }

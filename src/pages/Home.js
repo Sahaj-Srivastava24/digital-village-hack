@@ -67,7 +67,7 @@ export default function Home() {
                     </Stack>
                 </Container>
             </Box>
-            {/* <Socials /> */}
+            <Socials />
         </>
     )
 }
