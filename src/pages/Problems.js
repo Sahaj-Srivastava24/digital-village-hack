@@ -12,7 +12,7 @@ export default function Problems() {
         <div>
             <Container>
                 <div >
-                    <Typography variant="h3" style={style.center_text} gutterBottom >Problem Statement</Typography>
+                    <Typography variant="h3" style={{...style.center_text, ...style.TypographyStyles}} gutterBottom >Problem Statement</Typography>
                 </div>
                 {data.problemStatements.map(problemStatement => {
                     return (
