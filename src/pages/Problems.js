@@ -27,9 +27,13 @@ export default function Problems() {
                             <Typography style={style.problemHeadingStyles}>{problemStatement.title}</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
+                            Description:- 
                             <Typography style={style.problemSubStyles}>{problemStatement.content.des}</Typography> 
+                            Data:- 
                             <Typography style={style.problemSubStyles}>{problemStatement.content.data}</Typography>
+                            Link:- 
                             <Typography style={style.problemSubStyles}>{problemStatement.content.link}</Typography>
+                            Evaluation:- 
                             <Typography style={style.problemSubStyles}>{problemStatement.content.eval}</Typography>
                             </AccordionDetails>
                         </Accordion>
