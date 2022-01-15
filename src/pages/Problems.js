@@ -27,14 +27,22 @@ export default function Problems() {
                             <Typography style={style.problemHeadingStyles}>{problemStatement.title}</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-                            Description:- 
-                            <Typography style={style.problemSubStyles}>{problemStatement.content.des}</Typography> 
-                            Data:- 
-                            <Typography style={style.problemSubStyles}>{problemStatement.content.data}</Typography>
-                            Link:- 
-                            <Typography style={style.problemSubStyles}>{problemStatement.content.link}</Typography>
-                            Evaluation:- 
-                            <Typography style={style.problemSubStyles}>{problemStatement.content.eval}</Typography>
+                                <div style={style.guidelineSubStyles}>
+                                    <Typography style={style.guidelineHeadingStyles}>Description:- </Typography>
+                                    <Typography style={style.problemSubStyles}>{problemStatement.content.des}</Typography> 
+                                </div>
+                                <div style={style.guidelineSubStyles}>
+                                    <Typography style={style.guidelineHeadingStyles}>Data:- </Typography>
+                                    <Typography style={style.problemSubStyles}>{problemStatement.content.data}</Typography>
+                                </div>
+                                <div style={style.guidelineSubStyles}>
+                                    <Typography style={style.guidelineHeadingStyles}>Link:- </Typography>
+                                    <Typography style={style.problemSubStyles}>{problemStatement.content.link}</Typography>
+                                </div>
+                                <div style={style.guidelineSubStyles}>
+                                    <Typography style={style.guidelineHeadingStyles}>Evaluation:- </Typography>
+                                    <Typography style={style.problemSubStyles}>{problemStatement.content.eval}</Typography>
+                                </div>
                             </AccordionDetails>
                         </Accordion>
                     )}

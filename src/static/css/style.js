@@ -35,10 +35,19 @@ const problemSubStyles = {
   fontWeight:'100',
 }
 
+const guidelineHeadingStyles = {
+  fontWeight:'500',
+}
+
+const guidelineSubStyles = {
+  padding: '0.5rem 0',
+}
+
 const guidelineStyles = {
-  fontWeight:'100',
+    fontWeight:'100',
   lineHeight: '2rem',
-  letterSpacing:'0.05rem'
+  // letterSpacing:'0.05rem'
+
 }
 
 module.exports = {
@@ -49,5 +58,8 @@ module.exports = {
   socialsStyles,
   problemHeadingStyles,
   problemSubStyles,
+  guidelineHeadingStyles,
+  guidelineSubStyles,
   guidelineStyles
+
 }

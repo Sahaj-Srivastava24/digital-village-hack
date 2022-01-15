@@ -11,7 +11,7 @@ export default function Guidelines() {
                 <div>
                     <Typography variant="h3" style={{...style.center_text, ...style.TypographyStyles}} gutterBottom>Guidelines</Typography>
                 </div>
-                <Card style={{...style.accordionStyle, }}>
+                <Card style={{...style.accordionStyle, padding:"1rem 0"}}>
                     <Stack>
                         {data.guidelines.map((guideline, index) => {
                             return (
