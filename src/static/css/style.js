@@ -7,6 +7,7 @@ const accordionStyle = {
   backgroundColor: 'rgb(255, 255, 255,0.5)',
   boxShadow: '2px 3.25px rgba(0,0,0,0.2)',
   borderRadius: '0.5rem',
+  margin: '1rem 0',
 }
 
 const logoStyles = {

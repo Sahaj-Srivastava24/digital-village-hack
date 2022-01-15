@@ -14,10 +14,13 @@ function App() {
       backgroundSize: 'cover',
       minHeight: '100vh',
       minWidth: '100vw',
+      backgroundAttachment: 'fixed',
+      overflowX: 'hidden',
   }
   return (
     <>  
       <div className="main" style={bg_image_style}>
+
         <CssBaseline />
         <Nav />
         <Router>
