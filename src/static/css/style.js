@@ -24,12 +24,30 @@ const socialsStyles = {
   display: 'flex',
   flexDirection: 'column',
   padding: '1rem'
-
 }
+
+const problemHeadingStyles = { 
+  fontWeight:'bold',
+  fontSize:'0.9remrem',
+}
+
+const problemSubStyles = {
+  fontWeight:'100',
+}
+
+const guidelineStyles = {
+  fontWeight:'100',
+  lineHeight: '2rem',
+  letterSpacing:'0.05rem'
+}
+
 module.exports = {
   center_text,
   accordionStyle,
   logoStyles,
   TypographyStyles,
-  socialsStyles
+  socialsStyles,
+  problemHeadingStyles,
+  problemSubStyles,
+  guidelineStyles
 }

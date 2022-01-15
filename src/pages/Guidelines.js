@@ -16,7 +16,7 @@ export default function Guidelines() {
                         {data.guidelines.map((guideline, index) => {
                             return (
                                 <GuidelineItem key={index}>
-                                    <Typography variant='h6' component="span">{guideline}</Typography>
+                                    <Typography variant='h6' component="span" style={style.guidelineStyles}>{guideline}</Typography>
                                 </GuidelineItem>
                             )
                         })}
