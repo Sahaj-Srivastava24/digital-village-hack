@@ -18,13 +18,20 @@ const TypographyStyles = {
   fontFamily: "'Playfair Display', serif",
 }
 
+const headingStyles = {
+  ...TypographyStyles,
+  width:'100%',
+  textAlign: 'center', 
+  paddingBottom:'2rem',
+}
+
 const socialsStyles = {
   position: 'absolute',
   right: '0',
   bottom: '0',
   display: 'flex',
   flexDirection: 'column',
-  padding: '1rem',
+  padding: '2rem',
   opacity: '0.8',
 }
 
@@ -49,7 +56,15 @@ const guidelineStyles = {
     fontWeight:'100',
   lineHeight: '2rem',
   // letterSpacing:'0.05rem'
+}
 
+const homepageCardStyling = {
+  // backgroundColor: 'rgb(255, 255, 255,0.5)',
+  boxShadow: '0 0 0 0',
+  background: 'linear-gradient(180deg, rgba(255, 255, 255, 0.39) 0%, rgba(255, 255, 255, 0.39) 20.58%, rgba(255, 255, 255, 0.3315) 38.8%, rgba(255, 255, 255, 0.3159) 47.14%, rgba(255, 255, 255, 0.3159) 89.07%, rgba(255, 255, 255, 0) 100%)',
+  borderRadius: '0.5rem',
+  margin: '0 0 1rem 0',
+  padding: '1rem 1rem 2.5rem 1rem',
 }
 
 module.exports = {
@@ -57,11 +72,12 @@ module.exports = {
   accordionStyle,
   logoStyles,
   TypographyStyles,
+  headingStyles,
   socialsStyles,
   problemHeadingStyles,
   problemSubStyles,
   guidelineHeadingStyles,
   guidelineSubStyles,
-  guidelineStyles
-
+  guidelineStyles,
+  homepageCardStyling
 }

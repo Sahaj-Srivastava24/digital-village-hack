@@ -3,6 +3,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import dc from '../static/dc.png'
 import style from '../static/css/style'
+import { Link } from 'react-router-dom'
 
 export default function Socials() {
     const MUIicon = {
@@ -12,9 +13,17 @@ export default function Socials() {
     }
     return (
         <div style={style.socialsStyles}>
-            <InstagramIcon style={MUIicon}/>
-            <LinkedInIcon style={MUIicon}/>
-            <img src={dc} alt="" height={30} width={30} style={{ margin:'0.5rem 0 0 0'}} />
+            <Link to="/">
+                <InstagramIcon style={MUIicon}/>
+            </Link>
+            <Link to="/">
+                <LinkedInIcon style={MUIicon}/>
+            </Link>
+            <Link to="/">
+                <img src={dc} alt="" height={30} width={30} style={{ margin:'0.5rem 0 0 0'}} />
+            </Link>
+            
+            
         </div>
     )
 }

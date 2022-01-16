@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Typography, Accordion, AccordionSummary, AccordionDetails  } from '@mui/material'
 import style from '../static/css/style.js'
 import data from '../components/data.js'
+import Heading from '../components/Heading.js'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
@@ -11,9 +12,7 @@ export default function Problems() {
     return (
         <div>
             <Container>
-                <div >
-                    <Typography variant="h3" style={{...style.center_text, ...style.TypographyStyles }} gutterBottom >Problem Statement</Typography>
-                </div>
+                <Heading title="Problem Statement" isHome={false} />
                 {data.problemStatements.map(problemStatement => {
                     return (
                         <Accordion 

@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { CssBaseline } from '@mui/material';
 
 function App() {
-  console.log(bg);
   const bg_image_style = {
       backgroundImage: `url(${bg})`,
       backgroundRepeat: 'no-repeat',

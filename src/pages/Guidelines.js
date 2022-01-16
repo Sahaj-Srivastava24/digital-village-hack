@@ -3,14 +3,13 @@ import { Container, Card, Typography, Stack  } from '@mui/material'
 import GuidelineItem from '../components/GuidelineItem'
 import data from '../components/data'
 import style from '../static/css/style.js'
+import Heading from '../components/Heading'
 
 export default function Guidelines() {
     return (
         <div>
             <Container>
-                <div>
-                    <Typography variant="h3" style={{...style.center_text, ...style.TypographyStyles}} gutterBottom>Guidelines</Typography>
-                </div>
+                <Heading title="Guidelines" isHome={false} /> 
                 <Card style={{...style.accordionStyle, padding:"1rem 0"}}>
                     <Stack>
                         {data.guidelines.map((guideline, index) => {
