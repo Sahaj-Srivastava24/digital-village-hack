@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/system'
-import { Container, Button, Stack, Typography, Card } from '@mui/material'
+import { Container, Button, Stack, Grid, Typography, Card } from '@mui/material'
 import { styled } from '@mui/styles';
 import { Link } from 'react-router-dom'
 import logo from '../static/Intersect.png'
@@ -42,7 +42,7 @@ export default function Home() {
             },
     })
 
-    const StyledStack = styled(Stack)({
+    const StyledStack = styled(Grid)({
         padding: '2rem 0',
         display: 'flex',
         flexDirection: 'row',
@@ -68,7 +68,7 @@ export default function Home() {
                     <Card style={{...styles.homepageCardStyling}}>
                         <Typography style={styles.TypographyStyles} variant='h5'>Digital Village Hackathon is a national level initiative for students to compete in solving pressing problems in the domain of precision agriculture, under the project “Digital Village: A Data-Driven Approach to Precision Agriculture in Small Farms”. The students would have the opportunity to work on challenges faced in the field of precision agriculture and use various technologies in the domain of machine learning, deep learning, computer vision, data science, etc. to create world class solutions that will have practical applications in agriculture.</Typography>
                     </Card>
-                    <StyledStack spacing={2}>
+                    <StyledStack container>
                         <StyledLinks to='./problems'>
                             <StyledButton variant="outlined" size='large' fullWidth>Problem Statements</StyledButton>
                         </StyledLinks>
