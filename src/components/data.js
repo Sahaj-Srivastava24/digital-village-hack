@@ -65,6 +65,16 @@ This problem statement is formulated to create an application that gives informa
             link:`<dataset link>`,
             eval:`The submitted solution will be evaluated on various evaluation parameters like correctness of labeling, time complexity, etc. Other than these parameters, the novelty of idea behind the proposed architecture/model/algorithm and scope of improvement in the submitted solution will also be key parameters for evaluation.`
         }
+    },
+    {
+        id: 1,
+        title: 'Open challenges of precision agriculture.',
+        content: {
+            des:`As the name suggests, this problem statement is formulated to tackle any open challenge of precision agriculture domain. The students can choose any such problem and formulate a solution for the same. The problem can be related to farm management software or hardware, smart farming, robotics, data analysis etc. Students can choose to work on any public dataset or create one of their own.`,
+            data:`Any public dataset can be chosen by students to work on or they can create a dataset of their own.`,
+            link:`<dataset link>`,
+            eval:`The chosen problem and how it solves existing issues of precision farming will be a major criteria of evaluation. Depending on the problem, the submitted solution will be evaluated on conventional parameters like accuracy, mean square error, correlation etc. in regression problem, specificity, sensitivity, ROC etc. in classification problem and other relevant evaluation parameters according to open problem selected by the team. The novelty of idea behind the proposed architecture/model/algorithm and scope of improvement in the submitted solution will also be key parameters for evaluation.`
+        }
     }
 ]
 
@@ -72,8 +82,8 @@ const guidelines = [
     "The hackathon is going to be conducted online and is open to students of all colleges/universities across India and Tel Aviv University.",
     "Each team needs to register on the platform by <date>.",
     "Duration of the hackathon is <start date> to <end date>.",
-    "Team size- ",
-    "Submission date of solutions- ",
+    "Team size- 1 to 4 members.",
+    "Submission date- Anytime between the hackathon duration.",
     "Each team needs to select at least one problem statement.",
     "There is no registration fee.",
     "Winning teams of each problem statement category will be awarded a prize money of Rs. 10,000."

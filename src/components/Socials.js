@@ -13,13 +13,13 @@ export default function Socials() {
     }
     return (
         <div style={style.socialsStyles}>
-            <Link to="/">
+            <Link to="https://www.instagram.com/dsc.tiet/">
                 <InstagramIcon style={MUIicon}/>
             </Link>
-            <Link to="/">
+            <Link to="https://www.linkedin.com/company/40815646">
                 <LinkedInIcon style={MUIicon}/>
             </Link>
-            <Link to="/">
+            <Link to="https://discord.gg/G4VvVUvb">
                 <img src={dc} alt="" height={30} width={30} style={{ margin:'0.5rem 0 0 0'}} />
             </Link>
             

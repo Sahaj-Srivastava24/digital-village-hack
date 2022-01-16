@@ -4,6 +4,7 @@ import * as style from '../static/css/style.js'
 import data from '../components/data.js'
 import Heading from '../components/Heading.js'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Link } from 'react-router-dom'
 
 
 
@@ -12,7 +13,7 @@ export default function Problems() {
     return (
         <div>
             <Container>
-                <Heading title="Problem Statement" isHome={false} />
+                <Heading title="Problem Statements" isHome={false} />
                 {data.problemStatements.map(problemStatement => {
                     return (
                         <Accordion 
@@ -36,7 +37,9 @@ export default function Problems() {
                                 </div>
                                 <div style={style.guidelineSubStyles}>
                                     <Typography style={style.guidelineHeadingStyles}>Link:- </Typography>
-                                    <Typography style={style.problemSubStyles}>{problemStatement.content.link}</Typography>
+                                    <Link to={problemStatement.content.link}>
+                                        <Typography style={style.problemSubStyles}>{problemStatement.content.link}</Typography>
+                                    </Link>
                                 </div>
                                 <div style={style.guidelineSubStyles}>
                                     <Typography style={style.guidelineHeadingStyles}>Evaluation:- </Typography>
