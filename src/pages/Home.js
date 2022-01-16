@@ -51,7 +51,7 @@ export default function Home() {
 
     const overrideStyles = `
         .css-1p5q5e5-MuiStack-root>:not(style)+:not(style){
-            margin:0;
+            margin:0 !important;
         }
     `
 
