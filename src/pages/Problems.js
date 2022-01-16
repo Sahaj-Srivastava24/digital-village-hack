@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Typography, Accordion, AccordionSummary, AccordionDetails  } from '@mui/material'
-import style from '../static/css/style.js'
+import * as style from '../static/css/style.js'
 import data from '../components/data.js'
 import Heading from '../components/Heading.js'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';

@@ -2,7 +2,7 @@ import React from 'react'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import dc from '../static/dc.png'
-import style from '../static/css/style'
+import  * as style from '../static/css/style'
 import { Link } from 'react-router-dom'
 
 export default function Socials() {

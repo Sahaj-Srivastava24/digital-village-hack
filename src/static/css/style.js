@@ -67,7 +67,25 @@ const homepageCardStyling = {
   padding: '1rem 1rem 2.5rem 1rem',
 }
 
-module.exports = {
+
+// const def = {
+//   center_text,
+//   accordionStyle,
+//   logoStyles,
+//   TypographyStyles,
+//   headingStyles,
+//   socialsStyles,
+//   problemHeadingStyles,
+//   problemSubStyles,
+//   guidelineHeadingStyles,
+//   guidelineSubStyles,
+//   guidelineStyles,
+//   homepageCardStyling
+// }
+
+// export default def;
+
+export {
   center_text,
   accordionStyle,
   logoStyles,

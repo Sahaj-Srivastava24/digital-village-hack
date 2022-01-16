@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Card, Typography, Stack  } from '@mui/material'
 import GuidelineItem from '../components/GuidelineItem'
 import data from '../components/data'
-import style from '../static/css/style.js'
+import * as style from '../static/css/style.js'
 import Heading from '../components/Heading'
 
 export default function Guidelines() {

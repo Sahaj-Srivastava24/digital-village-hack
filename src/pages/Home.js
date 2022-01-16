@@ -4,7 +4,7 @@ import { Container, Button, Stack, Typography, Card } from '@mui/material'
 import { styled } from '@mui/styles';
 import { Link } from 'react-router-dom'
 import logo from '../static/Intersect.png'
-import styles from '../static/css/style'
+import * as styles from '../static/css/style'
 import Socials from '../components/Socials';
 import Heading from '../components/Heading';
 
@@ -49,9 +49,16 @@ export default function Home() {
         justifyContent: 'space-around',
     })
 
+    const overrideStyles = `
+        .css-1p5q5e5-MuiStack-root>:not(style)+:not(style){
+            margin:0;
+        }
+    `
+
 
     return (
         <>
+            <style>{overrideStyles}</style>
             <Box>
                 <Container maxWidth='lg' justifycontent="center">
                     <div style={{ textAlign:'center', paddingTop:'1rem'}}>

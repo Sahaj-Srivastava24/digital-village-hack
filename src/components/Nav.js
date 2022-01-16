@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../static/css/style.js'
+import * as styles from '../static/css/style.js'
 import tel from "../static/tel_aviv.png"
 import dsc from "../static/dsc.png"
 import ti from "../static/ti.png"
