@@ -67,6 +67,25 @@ const homepageCardStyling = {
   padding: '1rem 1rem 2.5rem 1rem',
 }
 
+const styledAnchor = {
+            textDecoration: 'none',
+            margin: 0,
+            width: '20%',
+            color: 'inherit',
+            '&:hover': {
+            textDecoration: 'none',
+            color: 'inherit',
+            },
+            '&:focus': {
+            textDecoration: 'none',
+            color: 'inherit',
+            },
+            '&:active': {
+            textDecoration: 'none',
+            color: 'inherit',
+            },
+}
+
 
 // const def = {
 //   center_text,
@@ -97,5 +116,6 @@ export {
   guidelineHeadingStyles,
   guidelineSubStyles,
   guidelineStyles,
-  homepageCardStyling
+  homepageCardStyling,
+  styledAnchor
 }

@@ -75,12 +75,12 @@ export default function Home() {
                         <StyledLinks to='./guidelines'>
                             <StyledButton variant="outlined" size='large' fullWidth>Guidelines</StyledButton>
                         </StyledLinks>
-                        <StyledLinks to=''>
+                        <a href='https://forms.gle/M3pGsqseTBTsd1RA8' style={styles.styledAnchor} target="_blank" rel="noreferrer">   
                             <StyledButton variant="outlined" size='large' fullWidth>Register</StyledButton>
-                        </StyledLinks>
-                        <StyledLinks to=''>
+                        </a>
+                        <a href='https://forms.gle/PtFR7B132DQEXFDR8' style={styles.styledAnchor} target="_blank" rel="noreferrer">
                             <StyledButton variant="outlined" size='large' fullWidth>Submit Solution</StyledButton>
-                        </StyledLinks>
+                        </a>
                     </StyledStack>
                 </Container>
             </Box>

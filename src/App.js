@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import bg from './static/bg.png';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { CssBaseline } from '@mui/material';
+import Register from './pages/Register';
 
 function App() {
   const bg_image_style = {
