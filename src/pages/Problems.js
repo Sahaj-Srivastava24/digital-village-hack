@@ -14,9 +14,10 @@ export default function Problems() {
         <div>
             <Container>
                 <Heading title="Problem Statements" isHome={false} />
-                {data.problemStatements.map(problemStatement => {
+                {data.problemStatements.map((problemStatement,index) => {
                     return (
                         <Accordion 
+                        key={index}
                         style={style.accordionStyle}
                         disableGutters>
                             <AccordionSummary
@@ -37,9 +38,9 @@ export default function Problems() {
                                 </div>
                                 <div style={style.guidelineSubStyles}>
                                     <Typography style={style.guidelineHeadingStyles}>Link:- </Typography>
-                                    <Link to={problemStatement.content.link}>
+                                    <a herf={problemStatement.content.link} target="_blank" rel="noreferrer">
                                         <Typography style={style.problemSubStyles}>{problemStatement.content.link}</Typography>
-                                    </Link>
+                                    </a>
                                 </div>
                                 <div style={style.guidelineSubStyles}>
                                     <Typography style={style.guidelineHeadingStyles}>Evaluation:- </Typography>
