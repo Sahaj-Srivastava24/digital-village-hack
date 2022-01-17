@@ -1,0 +1,6 @@
+# Redirects to handle direct access to any react endpoint
+# /problems   /   200
+# /guidelines   /   200
+
+# Redirect every route
+/*  /index.html  200
